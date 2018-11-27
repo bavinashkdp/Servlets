@@ -1,0 +1,59 @@
+﻿body
+{
+	background-color:pink;
+	fontfamily:arial,Times;
+}
+header
+{
+	background-color:orange;
+		width:80%;
+	color:blue;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+
+	padding:10px;
+
+}
+hgroup h1
+{
+	font-size:2em;
+}
+hgroup h2
+{
+	font-size:1.2em;
+}
+h1
+{
+	line-height:5px;
+	font-size:1.5em;
+}
+footer
+{
+	background-color:orange;
+	width:80%;
+	color:blue;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:right;
+
+	padding:10px;
+	
+
+}
+section
+{
+	background-color:blue;
+	width:80%;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+
+	border-width:5px;
+	border-color:orange;
+	border-style:solid;
+
+	padding:5px;
+
+}

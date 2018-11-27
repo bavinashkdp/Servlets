@@ -1,0 +1,42 @@
+body
+{
+	background-color:grey;
+	fontfamily:Alian,Times
+}
+header
+{
+	background-color:black;
+	width:80%;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:10px;
+
+}
+section
+{
+	background-color:white;
+	width:80%;
+	color:black;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+	padding:5px;
+	
+
+}
+footer
+{
+	background-color:black;
+	width:80%;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:10px;
+
+}

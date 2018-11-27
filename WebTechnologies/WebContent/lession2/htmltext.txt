@@ -1,0 +1,62 @@
+css are 3 types
+
+1>on submit css/on-page css
+2>in-line css
+3>external css
+
+
+<!-
+			<style  type="text/css"  media="screen">
+				body
+				{
+					font-family:Arial,Times,Sans-serif;
+					background-color:grey;
+				}
+				header
+				{
+					background-color:black;
+					color:white;
+					width:80%;
+					margin-left:auto;
+					margin-right:auto;
+					text-align:center;
+					padding:10px;
+				}
+				section
+				{
+					background-color:white;
+					color:black;
+					width:80%;
+					margin-left:auto;
+					margin-right:auto;
+					text-align:center;
+					border-width:5px;
+					border-style:solid;
+					borer-color:black;
+					padding:5px
+				}
+				footer
+				{
+					background-color:black;
+					color:white;
+					width:80%;
+					margin-left:auto;
+					margin-right:auto;
+					text-align:center;
+					padding:10px
+				}
+				`			
+			</style>
+
+			->
+
+
+
+
+
+
+
+
+
+
+
