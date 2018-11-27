@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Dom Manupularion</title>
+        <script type="text/javascript">
+        document.writeln("<h1>take input from user </h1>");
+        function fn1()
+        {
+            var user=document.getElementById("username").value;
+            var pwd=document.getElementById("password").value;
+            
+          
+           if(user==pwd)
+           {
+               alert("login successfull "+user+" \t"+pwd+"")
+           }
+           else{
+            alert("invalid password or ussername")
+          
+           }
+          
+           
+        }
+        </script>
+    </head>
+    <body>
+        <input type="username" id="username" placeholder="username"><br><br>
+        <input type="password" id="password" placeholder="password"><br>
+        <button onclick="fn1()" id="btn1">click</button>
+    </body>
+</html>

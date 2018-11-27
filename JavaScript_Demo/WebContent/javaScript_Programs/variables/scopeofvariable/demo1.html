@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>scope of variables</title>
+        <script type="text/javascript">
+        var a=30;//global variable
+        document.write("<h1>a:"+a+"</h1>");
+        var1="avid";//global variable
+        function myFunction()
+        {
+            var2="avid";//global variable
+            var c=69;//local variable
+            document.write("<h1>a:"+a+"</h1>");
+            document.write("<h1>c:"+c+"</h1>");
+        }
+        myFunction();
+
+        document.write("<h1>a:"+a+"</h1>");
+        document.write("<h1>c:"+c+"</h1>");//local variable is invisible out side function
+        
+        </script>
+    </head>
+</html>

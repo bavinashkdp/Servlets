@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>takeInputFromSelectBox</title>
+        <script type="text/javascript">
+        document.writeln("<h1>takeInputFromSelectBox</h1>");
+        function fn1(){
+            var select=document.getElementById("institute");
+           // alert(select.value+" is selected!!!!!!!!!!!!");
+           // alert(select.options[3].value+" is selected!!!!!!!!!!!!");
+           alert(select.options[select.selectedIndex].value+" is selected!!!!!!!!!!!!");
+
+
+
+        }
+        </script>
+    </head>
+    <body>
+       <select id="institute">
+           <option value="jspiders">jspiders</option>
+           <option value="simlesnippets">simlesnippets</option>
+           <option value="durgasoft">durgasoft</option>
+           <option value="abc">abc</option>
+       </select>
+         
+        <button onclick="fn1()">click</button>
+    </body>
+</html>

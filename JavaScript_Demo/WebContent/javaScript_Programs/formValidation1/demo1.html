@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>form validation 2</title>
+        <script type="text/javascript">
+        function validate1(){
+            var username=document.getElementById("uname");
+            var password=document.getElementById("pwd");
+            if(username.value.trim()=="")
+            {
+                alert("blank user name ");
+                return false;
+            }
+            else if(password.value.trim()=="")
+            {
+                alert("blank user password ");
+                return false;
+            }
+            else if(password.value.trim().length<5)
+            {
+                alert(" password is too short; contain atleast 5 character   ");
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+        }
+        
+        </script>
+    </head>
+    <body>
+        <form action="message.html" onsubmit="return validate1()">
+            <input type="text" placeholder="username" id="uname"><br><br>
+            <input type="password" placeholder="password" id="pwd"><br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>

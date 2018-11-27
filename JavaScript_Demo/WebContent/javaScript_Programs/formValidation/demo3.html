@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>form validation</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            var username=document.getElementById("name");
+            var password=document.getElementById("pwd");
+
+            if(username.value==""||password.value=="")
+            {
+                alert("blank values ar not accepted");
+            }
+            else{
+                
+            }
+            
+
+        }
+        
+        </script>
+        
+
+    </head>
+    <body>
+        <form action="message.html" onsubmit="validate()"> 
+        <input type="text" placeholder="userName"  id="name"><br><br>
+        <input type="password" placeholder="password"  id="pwd"><br><br>
+        <button type="submit">submit</button>
+        </form>
+        
+    </body>
+
+</html>

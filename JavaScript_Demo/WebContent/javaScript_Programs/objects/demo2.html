@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>objects in java script</title>
+        <script type="text/javascript">
+        
+        var Car={
+             car_name : "audi",
+             car_model : "audi2017",
+             car_price : 65000,
+             autopiolet : function ()
+             {
+                 document.writeln("<h1>this car has auto piolet feature </h1>");
+             }
+        }
+            Car.autopiolet();
+            Car.fuelType="electrical"; //we can add the pproperty out side thr object structure
+            document.writeln("<h1>"+Car.car_name+"</h1>");
+            document.writeln("<h1>"+Car.car_model+"</h1>");
+            document.writeln("<h1>"+Car.car_price+"</h1>");
+            document.writeln("<h1>"+Car.fuelType+"</h1>");
+
+
+            
+            document.writeln("<h1>*********************************</h1>");
+            document.writeln("<h1>"+typeof(Car.car_name)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.car_model)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.car_price)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.fuelType)+"</h1>");
+             
+             
+             
+            document.writeln("<h1>*********************************</h1>");
+            delete(Car.car_price);
+            document.writeln("<h1>"+Car.car_name+"</h1>");
+            document.writeln("<h1>"+Car.car_model+"</h1>");
+            document.writeln("<h1>"+Car.car_price+"</h1>");
+            document.writeln("<h1>"+Car.fuelType+"</h1>");
+            document.writeln("<h1>*********************************</h1>");
+
+            document.writeln("<h1>"+typeof(Car.car_name)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.car_model)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.car_price)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.fuelType)+"</h1>");
+            document.writeln("<h1>*********************************</h1>");
+            Car.car_price="980000";
+            document.writeln("<h1>"+Car.car_name+"</h1>");
+            document.writeln("<h1>"+Car.car_model+"</h1>");
+            document.writeln("<h1>"+Car.car_price+"</h1>");
+            document.writeln("<h1>"+Car.fuelType+"</h1>");
+            document.writeln("<h1>*********************************</h1>");
+
+            document.writeln("<h1>"+typeof(Car.car_name)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.car_model)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.car_price)+"</h1>");
+            document.writeln("<h1>"+typeof(Car.fuelType)+"</h1>");
+           
+        </script>
+    </head>
+     <body>
+
+     </body>
+</html>

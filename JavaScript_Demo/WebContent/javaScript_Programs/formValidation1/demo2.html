@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>form validation 2</title>
+        <script type="text/javascript">
+        function validate1(){
+            var username=document.getElementById("uname");
+            var password=document.getElementById("pwd");
+            if(username.value.trim()=="" & password.value.trim()=="" & password.value.trim().length<5)
+            {
+                username.style.border="solid 3px red";
+                password.style.border="solid 3px red";
+                document.getElementById("labelAll").style.visibility="visible";
+                return false;
+            }
+            else if(username.value.trim()=="")
+            {
+               // alert("blank user name ");
+                username.style.border="solid 3px red";
+                document.getElementById("userLable").style.visibility="visible";
+
+                return false;
+            }
+            else if(password.value.trim()=="")
+            {
+                //alert("blank user password ");
+                password.style.border=" solid 3px red"
+                document.getElementById("passwordLabel").style.visibility="visible";
+                return false;
+            }
+            else if(password.value.trim().length<5)
+            {
+                //alert(" password is too short; contain atleast 5 character   ");
+                password.style.border="solid 3px red";
+                document.getElementById("passwordLabel1").style.visibility="visible";
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+        }
+        
+        </script>
+    </head>
+    <body>
+        <form action="message.html" onsubmit="return validate1()">
+            <label style="color: orangered; visibility: hidden" id="labelAll">Please enter all the input fields</label>
+            <br>
+            <input type="text" placeholder="username" id="uname">
+         
+            <label  id="userLable" style="color: red; visibility: hidden;">invalid username</label>
+            <br>  <br>
+            
+            <input type="password" placeholder="password" id="pwd">
+            <label style="color: orangered; visibility: hidden" id="passwordLabel">invalid password</label>
+            <br>
+            <label style="color: orangered; visibility: hidden" id="passwordLabel1">password is too short.... password contains atleast 5 characters</label>
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>

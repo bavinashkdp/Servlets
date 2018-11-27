@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Regular expresions mobileNumber validations</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            /*
+            
+            \d matches any digit(equal to [0-9])
+            \w matches word character(a-z, A-Z, & _)
+            \s matches whitespace chatacters(spaces & tabs)
+            \t matches  a tab only
+
+            first character has to between 5-9 | next 8 characters have to between a-z 
+            last character has to be 0
+            
+            
+            
+            */
+
+
+
+            var mobileNumber=document.getElementById("num").value;
+            //var regExp=/[7-9]\d{9}/;
+           // var regExp=/^[7-9]\d{9}/;  
+           var regExp=/^[7-9]\d{9}$/;  
+            if(regExp.test(mobileNumber))
+            {
+                document.getElementById("numberlabel").innerHTML="valid number";
+                document.getElementById("numberlabel").style.color="green";
+                document.getElementById("numberlabel").style.visibility="visible";
+                
+            }
+            else{
+                
+                document.getElementById("numberlabel").innerHTML="in-valid number";
+                document.getElementById("numberlabel").style.color="red";
+                document.getElementById("numberlabel").style.visibility="visible";
+                
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Regular expresions mobileNumber validations</h1>
+        <input type="text" placeholder="mobile number" id="num"><br><br>
+        <label id="numberlabel" style="color: magenta; visibility: hidden;">invalid username </label>
+        <br><br>
+        <button  type="submit" onclick="validate()">submit</button>
+    </body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <title>objects in javascript</title>
+    <script type="text/javascript">
+        /*
+        Boolean can be object(if it defines with new keyword)
+        Numbers can be object(if it defines with new keyword)
+        String can be object(if it defines with new keyword)
+        Maths are always objects
+        Dates are always objects
+        regular expressions are always objects
+        */
+
+        var Car={
+            car_name:"bmw",
+            car_model:"model53",
+            car_price:"650000",
+            autopiolet:function()
+            {
+                document.writeln("<h1>this car ha auto piolet feature</h1>");
+                document.writeln("<h1>"+Car.car_name+"</h1>");
+                document.writeln("<h1>"+Car.car_model+"</h1>");
+                document.writeln("<h1>"+Car.car_price+"</h1>");
+           
+            }
+                
+        }
+           Car.autopiolet();
+     
+           document.writeln("<h1>************************</h1>");
+       
+
+        var str=new String();//object
+        var str1="abc";
+        var b=new Boolean();
+        var b1=true;
+        var n=new Number();
+        var n1=500;
+        
+        document.writeln("<h1>"+typeof(str)+"</h1>");
+        document.writeln("<h1>"+typeof(b)+"</h1>");
+        document.writeln("<h1>"+typeof(n)+"</h1>");
+        document.writeln("<h1>************************</h1>");
+       
+        document.writeln("<h1>"+typeof(str1)+"</h1>");
+        document.writeln("<h1>"+typeof(b1)+"</h1>");
+        document.writeln("<h1>"+typeof(n1)+"</h1>");
+       
+    </script>
+</html>

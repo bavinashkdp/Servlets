@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <title>get Element by class name</title>
+    <script type="text/javascript">
+        function changeStyling()
+        {
+            var element=document.getElementsByClassName("myParam");
+            for(var y=0;y<element.length;y++)
+            {
+                element[y].style.color = "red";
+            }
+        }
+    
+    </script>
+    </head>
+    <body>
+        <p class="myParam">This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p class="myParam">This is paragraph 3</p>
+        <p>This is paragraph 4</p>
+        <p class="myParam">This is paragraph 5</p>
+        <a class="myParam" href="#">This is Ancor Tag</a><br><br>
+        <button onclick="changeStyling()">click me</button>
+
+    </body>
+
+</html>

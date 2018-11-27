@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>takeInputFromSelectBox</title>
+        <script type="text/javascript">
+        document.writeln("<h1>takeInputFromSelectBox</h1>");
+        function ftn1()
+        {
+           var institute= document.getElementById("institute");
+           //alert(institute.options[2].value);
+           alert(institute.options[institute.selectedIndex].value);
+
+
+           
+        }
+        </script>
+    </head>
+    <body>
+        <select id="institute">
+            <option value="simple snippets">simple snippets</option>
+            <option value="telusko learnings">telusko learnings</option>
+            <option value="jspiders">jspiders</option>
+            <option value="ABC">ABC</option>
+            <option value="JLC">JLC</option>
+        </select>
+        <br><br>
+        <button onclick="ftn1()">click</button>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+`   <head>
+        <title> object in java script</title>
+            <script type="text/javascript">
+                var car_name="benz";
+                var car_model="model_3";
+                var car_price=50000;
+                function autopiolet()//method or function
+                {
+                    document.write("<h1> car has auto piolet feature<h1/>");
+                    document.write("<h1> car has auto piolet feature\t---------->"+car_name+"<h1/>");
+                    document.write("<h1> car has auto piolet feature\t---------->"+car_model+"<h1/>");
+                    document.write("<h1> car has auto piolet feature\t---------->"+car_price+"<h1/>");
+                        
+                }
+                //metod or function call
+                autopiolet();
+                document.write("<h1> ***************************************************<h1/>");
+                
+                
+                //object structure
+                var Car ={
+                    car_name:"audi",
+
+                    car_model:"model_5",
+                    car_price:100000,
+                    autopiolet:function()// it will act like a method
+                    {
+                        document.write("<h1> car has auto piolet feature<h1/>");
+                        document.write("<h1> car has auto piolet feature\t---------->"+Car.car_name+"<h1/>");
+                        document.write("<h1> car has auto piolet feature\t---------->"+Car.car_model+"<h1/>");
+                        document.write("<h1> car has auto piolet feature\t---------->"+Car.car_price+"<h1/>");
+                        
+                    }
+
+
+                }
+
+                Car.autopiolet();
+
+
+
+                document.write("<h1> ***************************************************<h1/>");
+                 function Cars(car_name,car_model,car_price)
+                 {
+                    this.car_name=car_name;
+                    this.car_model=car_model;
+                    this.car_price=car_price;
+                    this.autopiolet=function(){
+                        document.write("<h1> car has auto piolet feature<h1/>");
+                        document.write("<h1> car has auto piolet feature\t---------->"+this.car_name+"<h1/>");
+                        document.write("<h1> car has auto piolet feature\t---------->"+this.car_model+"<h1/>");
+                        document.write("<h1> car has auto piolet feature\t---------->"+this.car_price+"<h1/>");
+                        
+                    }
+                 }
+
+                 var cars2=new Cars("bmw","model_4","70000");
+                    cars2.autopiolet();
+                    var cars3=new Cars("ferari","model_6","90000");
+                    cars3.autopiolet();
+
+
+            </script>
+
+    </head>
+    <body>
+        
+    </body>
+
+</html>

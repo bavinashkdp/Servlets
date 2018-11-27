@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> document.writeln(take input from radion buttons</title>
+        <script type="text/javascript">
+         document.writeln("<h1>take input from radio buttons: </h1>");
+        function fn1()
+        {
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+            if(rd1.checked==true)
+            alert(rd1.value+" button  is clicked");
+            else if(rd2.checked==true)
+            alert(rd2.value+" button is clicked");
+            else
+            alert(" none of the buttons are clicked");
+
+        }
+        </script>
+
+    </head>
+    <body>
+            <input type="radio" name="grp1" value="simplesnippets" id="rd1">simplesnippets</input><br>
+            <input type="radio" name="grp1" value="jspiders" id="rd2">jspiders</input><br>
+            <button onclick="fn1()">click me</button>
+
+    </body>
+
+</html>

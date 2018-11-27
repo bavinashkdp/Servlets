@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Regular expressions</title>
+        <script type="text/javascript">
+        /*
+        Regular expressions are used to used to perform
+        powerful pattern matching and search and replace
+        functions on text....
+        */
+        function validate()
+        {
+            var userName=document.getElementById("uname").value;
+            //var regExp=/E00/;
+            var regExp=/E00/i;
+            if(regExp.test(userName))
+            {
+                alert("valid username");
+            }
+            else{
+                alert("invalid username");
+            }
+            //if(userName.value.trim()=="")
+            //{
+             //  alert("invalid username");
+              //  alert("valid username");
+               // userName.style.border="solid 2px magenta";
+              //  document.getElementById("usernameLabel").style.visibility="visible";
+           //  return false;
+               
+           // }
+           // else{
+             //   if(regExp.test(userName))
+            //    {
+             //   alert("valid username");
+              //  return true;
+              //  }
+               // else{
+             //       alert("invalid username");
+             //    return false;
+              //  }
+                //userName.style.border="solid 2px magenta";
+                //document.getElementById("usernameLabel").style.visibility="visible";
+              
+          
+        }
+        </script>
+    </head>
+    <body>
+         <form action="message.html">
+       
+            <input type="text" placeholder="userName" id="uname"><label style="color: magenta; visibility: hidden" id="usernameLabel">invalid userName</label>
+            <br><br>
+            <button type="button" onclick="validate()">submit</button>
+        </form>
+    </body>
+</html>
